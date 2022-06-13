@@ -1,7 +1,7 @@
 #languaje:en
 Feature: User Register
 
-  Scenario: User Register
+  Scenario Outline: User Register
     Given That user has opened the ecommerce
     When he selects module
     |  module  |

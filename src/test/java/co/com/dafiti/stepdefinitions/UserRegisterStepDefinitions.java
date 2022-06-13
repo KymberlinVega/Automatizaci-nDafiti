@@ -20,18 +20,18 @@ public class UserRegisterStepDefinitions {
     @When("he selects module")
     public void whenHeSelectsModule() {
         // Codigo de tareas
-        theActorInTheSpotlight().attemptsTo(taskSelectsModule);
+       // theActorInTheSpotlight().attemptsTo(taskSelectsModule);
     }
 
     @When("he adds log data")
     public void whenHeAddsLogData() {
         // Codigo de tareas
-        theActorInTheSpotlight().attemptsTo(taskAddData);
+        //theActorInTheSpotlight().attemptsTo(taskAddData);
     }
 
     @Then("he should see the registered user")
     public void thenHeShouldSeeTheRegisteredUser() {
         // Codigo de tareas
-        theActorInTheSpotlight().should(seeThat(questionUserWasAdded));
+        //theActorInTheSpotlight().should(seeThat(questionUserWasAdded));
     }
 }

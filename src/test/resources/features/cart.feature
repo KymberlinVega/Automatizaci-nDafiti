@@ -1,8 +1,8 @@
 #languaje:en
   Feature: Cart operations
 
-    Scenario: Add a product
-      Given That user has opened the ecommerce
+    Scenario Outline: Add a product
+      Given That "user" has opened the ecommerce
       When he selects the product from the section
         |  category  |  subcategory  |  product  |
         | <category> | <subcategory> | <product> |
@@ -13,4 +13,4 @@
 
       Examples:
         | category | subcategory      | product                                                       |  size  |  discount  |
-        | MUJER    | TENIS DEPORTIVOS | Tenis Running Rosa-Naranja-Blanco adidas Performance Galaxy 5 | 36     | yes        |
+        | Mujer    | Tenis Deportivos | Tenis Training Negro-Blanco Skechers'                         | 36     | yes        |
