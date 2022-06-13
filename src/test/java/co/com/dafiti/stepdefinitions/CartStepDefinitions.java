@@ -1,5 +1,6 @@
 package co.com.dafiti.stepdefinitions;
 
+import co.com.dafiti.tasks.AddProduct;
 import co.com.dafiti.tasks.GoTo;
 import co.com.dafiti.tasks.SelectProduct;
 import io.cucumber.datatable.DataTable;
@@ -33,9 +34,9 @@ public class CartStepDefinitions
     }
 
     @When("he adds the product to the cart")
-    public void whenHeAddsTheProductToTheCart() {
+    public void whenHeAddsTheProductToTheCart(DataTable data) {
         // Codigo de tareas
-        //theActorInTheSpotlight().attemptsTo(taskAddProduct);
+        theActorInTheSpotlight().attemptsTo(AddProduct.theProductWithThe(data));
     }
 
     @Then("he should see the added product in the cart")
