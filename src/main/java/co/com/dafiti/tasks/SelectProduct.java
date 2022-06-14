@@ -29,6 +29,7 @@ public class SelectProduct implements Task {
                 Click.on(SUBCATEGORY.of(String.valueOf(values.get(0).get("subcategory"))).resolveFor(actor)),
                 Click.on(PRODUCT.of(String.valueOf(values.get(0).get("product"))).resolveFor(actor))
         );
+        actor.remember("ProductSelected", values.get(0).get("product"));
         try{
             Thread.sleep(3000);
         }catch (InterruptedException e){

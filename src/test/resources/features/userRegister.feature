@@ -12,5 +12,5 @@ Feature: User Register
     Then he should see the registered user
 
     Examples:
-    |  module      |  email              |  pass        |  confirmpass  |  name    |  lastname  |  document  |  type  |  date  | month  |  year  | sex    |
-    |  registrate  |  pruebas@gmail.com  |  0123456789  |  0123456789   |  prueba  |  prueba    |  40563451  |  CC    |  20    | 02     |  1995  |Femenino|
+    |  module      |  email               |  pass        |  confirmpass  |  name    |  lastname  |  document  |  type  |  date  | month  |  year  | sex    |
+    |  registrate  |  pruebas2@gmail.com  |  0123456789  |  0123456789   |  PRUEBA  |  prueba    |  40563451  |  CC    |  20    | 02     |  1995  |Femenino|

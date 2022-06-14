@@ -1,9 +1,9 @@
 package co.com.dafiti.stepdefinitions;
 
-import co.com.dafiti.tasks.AddModule;
+import co.com.dafiti.questions.RegisterWas;
+import co.com.dafiti.tasks.SelectModule;
 import co.com.dafiti.tasks.AddRegister;
 import co.com.dafiti.tasks.GoTo;
-import co.com.dafiti.tasks.SelectProduct;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -32,7 +32,7 @@ public class UserRegisterStepDefinitions {
     @When("he selects module")
     public void whenHeSelectsModule(DataTable data) {
         // Codigo de tareas
-        theActorInTheSpotlight().attemptsTo(AddModule.theProductWithThe(data));
+        theActorInTheSpotlight().attemptsTo(SelectModule.theProductWithThe(data));
     }
 
     @When("he adds log data")
@@ -44,6 +44,6 @@ public class UserRegisterStepDefinitions {
     @Then("he should see the registered user")
     public void thenHeShouldSeeTheRegisteredUser() {
         // Codigo de tareas
-        //theActorInTheSpotlight().should(seeThat(questionUserWasAdded));
+        theActorInTheSpotlight().should(seeThat(RegisterWas.Added()));
     }
 }

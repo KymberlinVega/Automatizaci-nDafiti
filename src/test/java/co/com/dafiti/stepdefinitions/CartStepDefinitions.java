@@ -1,5 +1,6 @@
 package co.com.dafiti.stepdefinitions;
 
+import co.com.dafiti.questions.ProductWas;
 import co.com.dafiti.tasks.AddProduct;
 import co.com.dafiti.tasks.GoTo;
 import co.com.dafiti.tasks.SelectProduct;
@@ -42,6 +43,6 @@ public class CartStepDefinitions
     @Then("he should see the added product in the cart")
     public void thenHeShouldSeeTheAddedProductInTheCart() {
         // Codigo de tareas
-        //theActorInTheSpotlight().should(seeThat(questionProductWasAdded));
+        theActorInTheSpotlight().should(seeThat(ProductWas.Added()));
     }
 }

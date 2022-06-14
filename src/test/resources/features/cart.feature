@@ -12,5 +12,5 @@
     Then he should see the added product in the cart
 
       Examples:
-        | category | subcategory      | product                                                       |  size  |
-        | Mujer    | Tenis Deportivos | Tenis Running Rosa-Naranja-Blanco adidas Performance Galaxy 5 | 36     |
+        | category | subcategory      | product            |  size  |
+        | Mujer    | Tenis Deportivos | adidas Performance | 36     |

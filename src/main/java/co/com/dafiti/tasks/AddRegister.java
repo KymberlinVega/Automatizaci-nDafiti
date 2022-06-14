@@ -38,6 +38,7 @@ public class AddRegister implements Task {
                 Click.on(SEX_1.of(String.valueOf(values.get(0).get("sex"))).resolveFor(actor)),
                 Click.on(SEND.resolveFor(actor))
         );
+        actor.remember("NameSelected", values.get(0).get("name"));
     }
 
     public static AddRegister theProductWithThe(DataTable data){
