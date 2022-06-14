@@ -1,4 +1,6 @@
 #languaje:en
+  # Autor: Kymberlin Vega
+
 Feature: User Register
 
   Scenario Outline: User Register

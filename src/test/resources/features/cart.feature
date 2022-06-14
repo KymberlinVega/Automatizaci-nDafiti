@@ -1,4 +1,6 @@
 #languaje:en
+    # Autor: Kymberlin Vega
+
   Feature: Cart operations
 
     Scenario Outline: Add a product
